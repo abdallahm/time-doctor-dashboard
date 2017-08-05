@@ -1,0 +1,98 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2b405b;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0; }
+
+.navigation {
+  background-color: white;
+  min-height: 70px;
+  border-bottom: 1px solid #d3dbe3; }
+  .navigation .container {
+    margin: 0px; }
+  .navigation img.logo {
+    width: 65px;
+    height: 65px; }
+  .navigation .navbar-nav {
+    margin-left: 15px; }
+    .navigation .navbar-nav li a {
+      line-height: 39px;
+      color: #2b405b; }
+    .navigation .navbar-nav li a:hover,
+    .navigation .navbar-nav li a:active {
+      color: #657FAC; }
+  .navigation ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    height: 70px;
+    display: inline-block;
+    line-height: 3.7em;
+    color: #2b405b; }
+
+.row-extended {
+  margin-left: 0px; }
+
+.col-md-4, .col-xs-6 {
+  padding-left: 0px; }
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-bottom: 15px; }
+
+.widget {
+  box-shadow: 3px 2px 10px -4px #cccccc; }
+  .widget .panel-heading,
+  .widget .panel-footer {
+    border-color: #D8DDE6;
+    background: white;
+    color: #2b405b; }
+  .widget .panel-heading .btn {
+    padding: 0px 6px;
+    margin-top: -4px; }
+  .widget .panel-heading .btn-link:focus,
+  .widget .panel-heading .btn-link:hover {
+    text-decoration: none; }
+  .widget .panel-heading .glyphicon,
+  .widget .panel-heading .btn-link,
+  .widget .panel-heading .dropdown-menu > li > a {
+    color: #77909D; }
+  .widget .panel-body .img-circle {
+    margin-top: -3px;
+    padding-right: 10px; }
+  .widget .progress-bar-item {
+    width: 80%;
+    margin-top: 4px; }
+    .widget .progress-bar-item .progress {
+      height: 14px;
+      margin-bottom: 19px; }
+      .widget .progress-bar-item .progress .progress-bar {
+        line-height: 16px; }
+  .widget .percentage {
+    font-size: 16px;
+    font-weight: bold; }
+
+.chartdiv {
+  height: 185px;
+  margin: auto; }
+  .chartdiv .amcharts-chart-div a {
+    display: none !important; }
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%; }
+
+.labels .title {
+  font-size: 11px; }
+.labels .subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px; }
+.labels .title,
+.labels .subtitle {
+  padding-left: 4px; }
+
+/*# sourceMappingURL=app.css.map */

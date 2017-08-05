@@ -1,0 +1,109 @@
+.navigation {
+  background-color: white;
+  min-height: 70px;
+  border-bottom: 1px solid #d3dbe3;
+}
+
+.navigation .container{
+  margin: 0px;
+}
+
+.navigation img.logo {
+  width: 65px;
+  height: 65px;
+}
+
+.navigation .navbar-nav > li > a {
+  line-height: 39px;
+  color: #2b405b;
+}
+
+.navigation ul li a {
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  
+  font-weight: 500;
+  height: 70px;
+  display: inline-block;
+  line-height: 3.7em;
+}
+
+.navigation ul li a, .widget > .panel-heading{
+  color: #2B405B;
+}
+
+.navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .widget > .panel-heading .glyphicon, .btn-link, .dropdown-menu>li>a{
+    color: #657FAC;
+}
+
+.row-extended{
+  margin-left: 0px
+}
+.col-md-4, .col-xs-6{
+  padding-left: 0px;
+}
+
+h1{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-bottom: 15px;
+}
+
+.widget {
+  box-shadow: 3px 2px 15px -4px rgba(204,204,204,1);
+}
+.widget > .panel-heading, .widget > .panel-footer{
+    border-color: #e1e5e5;
+    background: white;
+}
+
+.widget > .panel-heading .btn{
+  padding: 0px 6px;
+  margin-top: -4px;
+}
+.widget > .panel-heading .btn-link:focus, .widget > .panel-heading .btn-link:hover{
+  text-decoration: none;
+}
+.widget > .panel-body .img-circle{
+  margin-top: -3px;
+  padding-right: 10px;
+}
+.widget .progress-bar-item{
+  width: 80%;
+  margin-top: 4px;
+}
+.widget .progress-bar-item .progress{
+  height: 15px;
+  margin-bottom: 15px;
+}
+.widget .progress-bar-item .progress .progress-bar{
+  line-height: 16px;
+}
+
+.chartdiv {
+  height: 170px;
+  margin: auto;
+}
+.amcharts-chart-div > a{
+  display: none !important;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    /*display: inline-block;
+    margin-right: 20px;*/
+}
+.labels .title{
+  font-size: 11px;
+}
+.labels .subtitle{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.labels .subtitle, .labels .title{
+    padding-left: 4px;
+}

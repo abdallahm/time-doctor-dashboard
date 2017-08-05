@@ -1,0 +1,127 @@
+$font-stack: 'Roboto', sans-serif
+$primary-color: #2b405b
+$background-color: #f9f9f9
+$headers-background-color: white
+
+body
+  font-family: $font-stack
+  color: $primary-color
+  background-color: $background-color
+  margin: 0
+  padding: 0
+
+.navigation
+  background-color: $headers-background-color
+  min-height: 70px
+  border-bottom: 1px solid #d3dbe3
+
+  .container
+    margin: 0px
+
+  img.logo
+    width: 65px
+    height: 65px
+  
+  .navbar-nav
+    margin-left: 15px
+    
+    li
+      a
+        line-height: 39px
+        color: $primary-color
+      a:hover, 
+      a:active,
+        color: #657FAC
+  
+  ul
+    li
+      a
+        //font-family: 'Roboto',sans-serif
+        font-size: 18px
+        font-weight: 500
+        height: 70px
+        display: inline-block
+        line-height: 3.7em
+        color: $primary-color
+
+.row-extended
+  margin-left: 0px
+
+.col-md-4, .col-xs-6
+  padding-left: 0px
+
+h1
+  font-size: 22px
+  font-weight: 500
+  line-height: 25px
+  padding-bottom: 15px
+
+.widget
+  box-shadow: 3px 2px 10px -4px rgba(204,204,204,1)
+
+  .panel-heading,
+  .panel-footer
+    border-color: #D8DDE6
+    background: $headers-background-color
+    color: $primary-color
+  
+  .panel-heading 
+    .btn
+      padding: 0px 6px
+      margin-top: -4px
+
+    .btn-link:focus,
+    .btn-link:hover
+      text-decoration: none
+
+    .glyphicon, 
+    .btn-link, 
+    .dropdown-menu>li>a
+      color: #77909D
+
+  .panel-body 
+    .img-circle
+      margin-top: -3px
+      padding-right: 10px
+  
+  .progress-bar-item
+    width: 80%
+    margin-top: 4px
+  
+    .progress
+      height: 14px
+      margin-bottom: 19px
+
+      .progress-bar
+        line-height: 16px
+
+  .percentage
+    font-size: 16px
+    font-weight: bold
+    
+
+.chartdiv
+  height: 185px
+  margin: auto
+
+  .amcharts-chart-div
+    a
+      display: none !important
+
+.circle
+  width: 14px
+  height: 14px
+  border-radius: 50%
+
+.labels
+  .title
+    font-size: 11px
+
+  .subtitle
+    font-size: 14px
+    font-weight: bold
+    margin-bottom: 15px
+  
+  .title,
+  .subtitle
+    padding-left: 4px
