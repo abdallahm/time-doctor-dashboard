@@ -9,10 +9,10 @@ class Dashboard extends Component {
     return (
       <div className="row row-extended">
       	<h1>Company Dashboard</h1>
-      	<Col xs={12} md={4}>
+      	<Col xs={12} md={6} lg={4}>
       		<UserMouseActivity />
         </Col>
-        <Col xs={12} md={4} >
+        <Col xs={12} md={6} lg={4}>
       		<HighestMobileUsers />
         </Col>
         {/*<Col xs={12} md={4} >

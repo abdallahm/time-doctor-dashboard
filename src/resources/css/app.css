@@ -78,6 +78,8 @@ h1 {
   .widget .panel-footer span {
     color: #77909D;
     padding-left: 10px; }
+  .widget .panel-footer .footer-padding {
+    padding: 3.5px 0px; }
   .widget .panel-footer .title {
     padding: 0px 10px;
     line-height: 14px;

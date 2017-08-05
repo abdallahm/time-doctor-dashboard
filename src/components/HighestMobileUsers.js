@@ -6,7 +6,7 @@ import Widget from '../components/Widget';
 import HighestMobileUsersChart from '../data/HighestMobileUsersChart';
 
 const footer = (
-  <div>
+  <div className="footer-padding">
     <div className="pull-left">
       <div className="square" style={{backgroundColor: "#56bc74"}}></div>
     </div>
@@ -48,7 +48,7 @@ class HighestMobileUsers extends Component {
           <div className="row labels">
           { 
             HighestMobileUsersChart.labels.map((label, i) => 
-              <Col xs={12} md={6} key={i}>
+              <Col xs={4} md={6} key={i}>
                 <div className="row">
                   <div className="pull-left">
                     <div className="circle" style={{backgroundColor: label.color}}></div>
