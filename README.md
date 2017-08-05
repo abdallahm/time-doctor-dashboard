@@ -9,8 +9,11 @@ The purpose of the task is to be able to convert design into HTML / CSS. We want
 - Install [SASS](http://sass-lang.com/install)
 - Install the dependencies with `npm install`
 - Run the app in development mode with `npm start`.
-- Build with `npm run build`
-
+- Build with `npm run build`. to serve the built app, run the following:
+```
+npm install -g serve
+serve -s build
+```
 
 ## Libraries used to make this:
 

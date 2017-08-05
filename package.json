@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"sass --watch src/resources/sass:src/resources/css/\"",
-    "build": "concurrently \"react-scripts build\" \"src/resources/sass/*.sass src/resources/css/*.css\"",
+    "build": "concurrently \"react-scripts build\" \"sass src/resources/sass/*.sass src/resources/css/*.css\"",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
