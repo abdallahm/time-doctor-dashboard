@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from "prop-types";
 import Panel from 'react-bootstrap/lib/Panel';
 import DropdownButton from 'react-bootstrap/lib/DropdownButton';
 import MenuItem from 'react-bootstrap/lib/MenuItem';
@@ -12,18 +13,16 @@ class Widget extends Component {
   }
   renderHeader(){
     const {title, optionsMenu, settingsMenu} = this.props;
-    
-    
     return (
       <div>
         <div className="pull-left">{title}</div>
         <div className="pull-right">
-          {optionsMenu && 
-            <DropdownButton 
+          {
+            optionsMenu && <DropdownButton 
               bsStyle="link" 
               title={optionsMenu[this.state.optionsMenuSelected].title} 
               key={1} 
-              id="sdfsdf" 
+              id="DropdownButtonID" 
               onSelect={(key, event) => {
                 this.setState({optionsMenuSelected:key});
                 let onSelect = optionsMenu[key].onSelect;
@@ -38,32 +37,45 @@ class Widget extends Component {
               }
             </DropdownButton>
           }
-          {settingsMenu &&
-            <DropdownButton id="dropdown-custom-1" bsStyle="link" title={<Glyphicon glyph="option-vertical" />} noCaret>
+          {
+            settingsMenu && <DropdownButton id="dropdown-custom-1" bsStyle="link" title={<Glyphicon glyph="option-vertical" />} noCaret>
                 <MenuItem eventKey="1">Edit Widget</MenuItem>
                 <MenuItem eventKey="2">Delete Widget</MenuItem>
             </DropdownButton>
           }
 
         </div>
-        
         <div className="clearfix"></div>
       </div>
     )
   }
   renderFooter(){
-
-  }
-  render() {
-    let header = this.renderHeader();
+    const {footer} = this.props;
     return (
       <div>
-      	<Panel className="widget" header={header} footer="Panel footer">
+      {footer}
+      </div>
+    );
+  }
+  render() {
+    const header = this.renderHeader();
+    const footer = this.renderFooter();
+    return (
+      <div>
+      	<Panel className="widget" header={header} footer={footer}>
         {this.props.children}
       </Panel>
       </div>
     );
   }
 }
+
+Widget.propTypes = {
+  header: PropTypes.node,
+  footer: PropTypes.node,
+  children: PropTypes.node,
+  optionsMenu: PropTypes.array,
+  settingsMenu: PropTypes.bool,
+};
 
 export default Widget;

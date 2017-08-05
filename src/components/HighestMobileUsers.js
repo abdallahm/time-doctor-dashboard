@@ -104,6 +104,27 @@ const config = {
       }]
   };
 
+const footer = (
+  <div>
+ 
+    <div className="pull-left">
+      <div className="square" style={{backgroundColor: "#56bc74"}}></div>
+    </div>
+    <div className="pull-left">
+      <div className="title">Actual Hours</div>
+    </div>
+
+    <div className="pull-left padding-left-20">
+      <div className="square" style={{backgroundColor: "#13834d"}}></div>
+    </div>
+    <div className="pull-left">
+      <div className="title">Hours Worked More</div>
+    </div>
+  
+    <div className="clearfix"></div>
+  </div>
+) 
+
 class HighestMobileUsers extends Component {
 
   render() {
@@ -123,20 +144,21 @@ class HighestMobileUsers extends Component {
             }
           }
         ]}
-        settingsMenu={true}>
+        settingsMenu={true}
+        footer={footer}>
         <Col xs={12} md={6}>
           <div className="row labels">
           { 
-            config.labels.map(label => 
-              <Col xs={12} md={6}>
+            config.labels.map((label, i) => 
+              <Col xs={12} md={6} key={i}>
                 <div className="row">
-                <div className="pull-left">
-                  <div className="circle" style={{backgroundColor: label.color}}></div>
-                </div>
-                <div className="pull-left">
-                  <div className="title">{label.title}</div>
-                  <div className="subtitle">{label.subtitle}</div>
-                </div>
+                  <div className="pull-left">
+                    <div className="circle" style={{backgroundColor: label.color}}></div>
+                  </div>
+                  <div className="pull-left">
+                    <div className="title">{label.title}</div>
+                    <div className="subtitle">{label.subtitle}</div>
+                  </div>
                 </div>
               </Col>
             )

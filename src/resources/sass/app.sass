@@ -2,6 +2,7 @@ $font-stack: 'Roboto', sans-serif
 $primary-color: #2b405b
 $background-color: #f9f9f9
 $headers-background-color: white
+$link-color: #77909D
 
 body
   font-family: $font-stack
@@ -77,12 +78,12 @@ h1
     .glyphicon, 
     .btn-link, 
     .dropdown-menu>li>a
-      color: #77909D
+      color: $link-color
 
   .panel-body 
     .img-circle
       margin-top: -3px
-      padding-right: 10px
+      margin-right: 10px
   
   .progress-bar-item
     width: 80%
@@ -98,8 +99,20 @@ h1
   .percentage
     font-size: 16px
     font-weight: bold
-    
 
+  .panel-footer
+    .img-circle:not(:first-child)
+      margin-left: -7px
+    span
+      color: $link-color
+      padding-left: 10px
+    .title
+      padding: 0px 10px
+      line-height: 14px
+      color: $link-color
+    
+.padding-left-20
+  padding-left: 20px
 .chartdiv
   height: 185px
   margin: auto
@@ -108,10 +121,17 @@ h1
     a
       display: none !important
 
+.img-circle
+  width: 20px
+
 .circle
   width: 14px
   height: 14px
   border-radius: 50%
+
+.square 
+  width: 14px
+  height: 14px
 
 .labels
   .title

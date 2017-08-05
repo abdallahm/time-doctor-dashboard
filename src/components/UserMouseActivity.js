@@ -9,7 +9,7 @@ import UsersActivities from '../data/UsersActivities';
 const userActivity = props => (
   <div key={props.name}>
     <Col xs={6}>
-      <Image src={"/assets/images/" + props.img + ".png"} circle />
+      <Image src={"/assets/images/" + props.img + ".jpg"} circle />
       <span>{props.name}</span>
     </Col>
     <Col xs={6}>
@@ -23,6 +23,15 @@ const userActivity = props => (
     <div className="clearfix"></div>
   </div>
 )
+
+const footer = (
+  <div>
+    <Image src={"/assets/images/avatar-1.jpg"} circle />
+    <Image src={"/assets/images/avatar-2.jpg"} circle />
+    <Image src={"/assets/images/avatar-3.jpg"} circle />
+    <span>+10 more</span>
+  </div>
+) 
 
 const UserMouseActivity = props => (
 	<Widget 
@@ -40,7 +49,8 @@ const UserMouseActivity = props => (
         }
       }
     ]}
-    settingsMenu={true}>
+    settingsMenu={true}
+    footer={footer}>
     {
       UsersActivities.map(activity => 
         userActivity(activity)
