@@ -7,14 +7,14 @@ import Widget from '../components/Widget';
 import UsersActivities from '../data/UsersActivities';
 
 const userActivity = props => (
-  <div key={props.name}>
+  <div key={props.name} className="row">
     <Col xs={6}>
       <Image src={"/assets/images/" + props.img + ".jpg"} circle />
       <span>{props.name}</span>
     </Col>
     <Col xs={6}>
       <div className="pull-left progress-bar-item">
-        <ProgressBar bsStyle="success" now={props.percentage} label={`${props.percentage}%`}/>
+        <ProgressBar bsStyle="success" now={props.percentage}/>
       </div>
       <div className="pull-right percentage">
         {props.percentage}%
