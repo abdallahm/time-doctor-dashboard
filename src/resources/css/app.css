@@ -12,8 +12,8 @@ body {
   .navigation .container {
     margin: 0px; }
   .navigation img.logo {
-    width: 65px;
-    height: 65px; }
+    width: 70px;
+    height: 70px; }
   .navigation .navbar-nav {
     margin-left: 15px; }
     .navigation .navbar-nav li a {
@@ -40,7 +40,8 @@ h1 {
   font-size: 22px;
   font-weight: 500;
   line-height: 25px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  margin-top: 10px; }
 
 .widget {
   box-shadow: 3px 2px 10px -4px #cccccc; }
