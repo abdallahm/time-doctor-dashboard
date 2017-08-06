@@ -3,6 +3,8 @@ $primary-color: #2b405b
 $background-color: #f9f9f9
 $headers-background-color: white
 $link-color: #77909D
+$link-active-color: #657FAC
+
 
 body
   font-family: $font-stack
@@ -26,13 +28,20 @@ body
   .navbar-nav
     margin-left: 15px
     
+    .active
+      a,
+      a:focus,
+      a:hover
+        background-color: transparent
+        color: $link-active-color
+        border-bottom: 1px solid $link-active-color
     li
       a
         line-height: 39px
         color: $primary-color
       a:hover, 
       a:active,
-        color: #657FAC
+        color: $link-active-color
   
   ul
     li

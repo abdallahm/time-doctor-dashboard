@@ -16,6 +16,12 @@ body {
     height: 70px; }
   .navigation .navbar-nav {
     margin-left: 15px; }
+    .navigation .navbar-nav .active a,
+    .navigation .navbar-nav .active a:focus,
+    .navigation .navbar-nav .active a:hover {
+      background-color: transparent;
+      color: #657FAC;
+      border-bottom: 1px solid #657FAC; }
     .navigation .navbar-nav li a {
       line-height: 39px;
       color: #2b405b; }
